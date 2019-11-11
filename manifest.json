@@ -1,0 +1,17 @@
+{
+  "name": "GoogleDocumentMD",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "GoogleDocument Markdown viewer",
+  "content_scripts": [{
+    "matches": ["https://docs.google.com/document/*/edit?view=md"],
+    "js": [
+      "js/marked.min.js",
+      "js/main.js"
+    ],
+    "css": [
+      "css/github-markdown.css",
+      "css/style.css"
+    ]
+  }]
+}
